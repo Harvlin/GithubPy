@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827e1e10-caaf-4db5-b6e4-e3840e0e8035" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -25,7 +24,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="87db054e-6624-4a41-ad06-a11fe037bd66" />
-        <option name="url" value="https://github.com/Harvlin/Git-test-py.git" />
+        <option name="url" value="https://github.com/Harvlin/git-py" />
       </UrlAndAccount>
     </option>
   </component>
@@ -59,6 +58,29 @@
       <option name="presentableId" value="Default" />
       <updated>1669720044989</updated>
     </task>
+    <task id="LOCAL-00001" summary="Demo Commit">
+      <created>1676488827940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676488827940</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Demo Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demo Commit" />
   </component>
 </project>
