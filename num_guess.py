@@ -1,6 +1,5 @@
-import random
-
-x = random.randrange(1, 10)
+from numpy import random
+x = random.randint(10)
 i = int(input(">>"))
 
 while True:
