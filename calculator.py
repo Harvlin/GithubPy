@@ -5,7 +5,7 @@ def mathematics_function():
     # make a loop
     while True:
         # taking user input information
-        print("What operation do you want to do ? \n A.Add\n B.Subtract\n C.Multiply\n D.Divide\n E.Square\n F.Power")
+        print("What operation do you want to do ? \n A.Add\n B.Subtract\n C.Multiply\n D.Divide\n E.Square\n F.Power\n O.Exit program")
         print("(Square operation work only for the first number input)")
         i = str(input(" >>".lower()))
         x = eval(input("Enter your First number:"))
@@ -23,6 +23,8 @@ def mathematics_function():
             print("The result is ", float(math.sqrt(x)))
         elif i == "f":
             print("The result is ", float(math.pow(x, y)))
+        elif i == "o":
+            break
         #Invalid input
         else:
             print("Invalid input")

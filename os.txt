@@ -1,0 +1,7 @@
+You can use "os.getcwd()" to know current working directory.
+
+To change the current working directory(CWD) os.chdir() method is used. 
+This method changes the CWD to a specified path. 
+It only takes a single argument as a new directory path.
+
+The current working directory is the folder in which the Python script is operating.
