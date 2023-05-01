@@ -1,50 +1,38 @@
-def menu_makanan():
+def makan():
+      global total_makanan
+      menu_makan = int(input("1. Babi: 35.000\n2. Ayam: 20.000\n3. Sapi: 28.000\n>>> "))
+      if menu_makan == 1:
+            jumlah_pesanan_makanan = int(input("Mau berapa banyak: "))
+            total_makanan = jumlah_pesanan_makanan * 35000
+            print(f"Total makanan: {total_makanan}")
+            
+      elif menu_makan == 2:
+            jumlah_pesanan_makanan = int(input("Mau berapa banyak: "))
+            total_makanan = jumlah_pesanan_makanan * 20000
+            print(f"Total makanan: {total_makanan}")
+                  
+      elif menu_makan == 3:
+            jumlah_pesanan_makanan = int(input("Mau berapa banyak: "))
+            total_makanan = jumlah_pesanan_makanan * 28000
+            print(f"Total makanan: {total_makanan}")
+def minum():
+      global total_minuman
+      menu_minum = int(input("1. Air: 2.500\n2. Jus: 15.000\n3. Teh: 8.000\n>>>"))
+      if menu_minum == 1:
+            jumlah_pesanan_minuman = int(input("Mau berapa banyak: "))
+            total_minuman = jumlah_pesanan_minuman * 2500
+            print(f"Total minuman: {total_minuman}")
+            
+      elif menu_minum == 2:
+            jumlah_pesanan_minuman = int(input("Mau berapa banyak: "))
+            total_minuman = jumlah_pesanan_minuman * 15000
+            print(f"Total minuman: {total_minuman}")
+            
+      elif menu_minum == 3:
+            jumlah_pesanan_minuman = int(input("Mau berapa banyak: "))
+            total_minuman = jumlah_pesanan_minuman * 8000
+            print(f"Total minuman: {total_minuman}")
 
-    global inputbarang1
-    global inputjumlah1
-    global totalharga1
-
-    print("Makanan yang dijual\n", "(1) soto: 12.000\n", "(2) mie: 8.000\n", "(3) nasi goreng: 15.000\n")
-    inputbarang1 = eval(input("Masukkan pesanan bedasarkan nomor: "))
-    if inputbarang1 == 1:
-        inputjumlah1 = eval(input("Jumlah: "))
-        totalharga1 = inputjumlah1 * 12000
-        print(f"Total harga: {totalharga1}")
-    elif inputbarang1 == 2:
-        inputjumlah1 = eval(input("Jumlah: "))
-        totalharga1 = inputjumlah1 * 8000
-        print(f"Total harga: {totalharga1}")
-    elif inputbarang1 == 3:
-        inputjumlah1 = int(input("Jumlah: "))
-        totalharga1 = inputjumlah1 * 15000
-        print(f"Total harga: {totalharga1}")
-    else:
-        print("Pilihan tidak ada")
-
-def menu_minuman():
-
-    global inputbarang
-    global inputjumlah
-    global totalharga
-
-    print("Minuman yang dijual\n", "(1) teh: 4.000\n", "(2) air: 3.000\n", "(3) jus: 8.000\n")
-    inputbarang = eval(input("Masukkan pesanan bedasarkan nomor: "))
-    if inputbarang == 1:
-        inputjumlah = eval(input("Jumlah: "))
-        totalharga = inputjumlah * 4000
-        print(f"Total harga: {totalharga}")
-    elif inputbarang == 2:
-        inputjumlah = eval(input("Jumlah: "))
-        totalharga = inputjumlah * 3000
-        print(f"Total harga: {totalharga}")
-    elif inputbarang == 3:
-        inputjumlah = eval(input("Jumlah: "))
-        totalharga = inputjumlah * 8000
-        print(f"Total harga: {totalharga}")
-    else:
-        print("Pilihan tidak ada")
-
-menu_makanan()
-menu_minuman()
-
-print(f"Total harga yang harus dibayar:", totalharga1 + totalharga)
+makan()
+minum()
+print("Total: ", total_makanan + total_minuman)

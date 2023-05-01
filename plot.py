@@ -20,6 +20,3 @@ def plot():
     plt.ylabel("y-line", fontsize=17, color="grey")
     plt.legend()
     plt.show()
-    plt.savefig(sys.stdout.buffer())
-    sys.stdout.flush()
-plot()
