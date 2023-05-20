@@ -5,7 +5,7 @@ class Pyramid:
 
     def __next__(self):
         x = self.a
-        self.a += "*"
+        self.a += "."
         return x
 
 i = Pyramid()

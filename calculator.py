@@ -34,4 +34,3 @@ def mathematics_function():
         if j != "yes":
             print("Ok, thanks")
             break
-mathematics_function()
