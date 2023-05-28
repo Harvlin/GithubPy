@@ -1,40 +1,45 @@
-# Recipe CRUD Operations: Users should be able to perform basic CRUD (Create, Read, Update, Delete) operations on recipes. 
-# They should be able to add a new recipe, view the details of a recipe, and delete recipes.
+# Make a recipe management
+# features including: Add, delete, view
 recipes = {}
-def add_recipes():
-      dish_name = input("Enter the name of your dish: ")
-      dish_ingredient = input("Enter your ingredient in a single line(comma separated): ")
-      dish_instruction = input("Enter the instruction in one single line(comma separated step by step): ")
-      recipes[dish_name] = {"Ingredient: ", dish_ingredient, " Dish instruction: ", dish_instruction}
-      print("Addes successfully.")
-def view_recipes():
-      dish_name = input("Enter the name of your dish: ")
-      recipe = recipes.get(dish_name)
-      if recipe:
-            print("Recipes: {dish_name}")
-            print("Ingredient: ", ", ".join(recipe["dish_ingredient"]))
-            print("Instructions: ", ", ".join(recipe["dish_instruction"]))
-      else:
-            print("Recipe not found")
-def del_recipes():
-      dish_name = input("Enter the name of your dish: ")
-      if dish_name in recipes:
-            del recipes[dish_name]
-            print("Deleted successfully.")
-      else:
-            print("Dish not found.")
-      
+def add_recipe():
+    name_dish = input("Enter the recipe name: ")
+    ingredients_dish = input("Enter the ingredients (comma separated): ").split(",")
+    instructions_dish = input("Enter the instructions (comma separated): ")
+    recipes[name_dish] = {"Dish ingredients": ingredients_dish, "Dish instructions": instructions_dish}
+    print("Recipe added successfully")
+def view_recipe():
+    name_dish = input("Enter the recipe name: ")
+    recipe = recipes.get(name_dish)
+    if recipe:
+        print(f"\nRecipe: {name_dish}")
+        print("Ingredients: ", ", ".join(recipe["Dish ingredients"]))
+        print("Instructions: ", recipe["Dish instructions"])
+    else:
+        print("Dish not found")
+def delete_recipe():
+    name_dish = input("Enter the dish name: ")
+    if name_dish in recipes:
+        del recipes[name_dish]
+        print("Recipe deleted successfully")
+    else:
+        print("Dish not found")
 def main():
-      while True:
-            user_choice = eval(input("1. Add recipes\n2. Delete recipes\n3. View_recipes\n4. Quit\nEnter your choice: "))
-            if user_choice == 1:
-                  add_recipes()
-            elif user_choice == 2:
-                  del_recipes()
-            elif user_choice == 3:
-                  view_recipes()
-            elif user_choice == 4:
-                  break
-            else:
-                  print("Invalid Input")
+    while True:
+        print("\nRecipe Manager")
+        print("1. Add Recipe")
+        print("2. View Recipe")
+        print("3. Delete Recipe")
+        print("4. Quit")
+        user_input = input("Enter your choice by numbers: ")
+        if user_input == "1":
+            add_recipe()
+        elif user_input == "2":
+            view_recipe()
+        elif user_input == "3":
+            delete_recipe()
+        elif user_input == "4":
+            break
+        else:
+            print("Invalid choice")
+            continue
 main()
