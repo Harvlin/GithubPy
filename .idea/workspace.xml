@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="827e1e10-caaf-4db5-b6e4-e3840e0e8035" name="Changes" comment="" />
+    <list default="true" id="827e1e10-caaf-4db5-b6e4-e3840e0e8035" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vs/Python/FileContentIndex/b6a330b0-0549-4226-a7d6-8edc7069801f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Python/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Python/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
