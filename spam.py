@@ -10,4 +10,4 @@ while i < int(limit):
     pyautogui.typewrite(message)
     pyautogui.press("enter")
 
-    i+=1
+    i += 1

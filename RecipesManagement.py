@@ -1,12 +1,17 @@
 # Make a recipe management
 # features including: Add, delete, view
 recipes = {}
+
+
 def add_recipe():
     name_dish = input("Enter the recipe name: ")
     ingredients_dish = input("Enter the ingredients (comma separated): ").split(",")
     instructions_dish = input("Enter the instructions (comma separated): ")
-    recipes[name_dish] = {"Dish ingredients": ingredients_dish, "Dish instructions": instructions_dish}
+    recipes[name_dish] = {
+        "Dish ingredients": ingredients_dish, "Dish instructions": instructions_dish}
     print("Recipe added successfully")
+
+
 def view_recipe():
     name_dish = input("Enter the recipe name: ")
     recipe = recipes.get(name_dish)
@@ -16,6 +21,8 @@ def view_recipe():
         print("Instructions: ", recipe["Dish instructions"])
     else:
         print("Dish not found")
+
+
 def delete_recipe():
     name_dish = input("Enter the dish name: ")
     if name_dish in recipes:
@@ -23,6 +30,8 @@ def delete_recipe():
         print("Recipe deleted successfully")
     else:
         print("Dish not found")
+
+
 def main():
     while True:
         print("\nRecipe Manager")
@@ -42,4 +51,6 @@ def main():
         else:
             print("Invalid choice")
             continue
+
+
 main()

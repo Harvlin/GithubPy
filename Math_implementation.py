@@ -5,7 +5,7 @@ while True:
                   "4. Area of circle\n"
                   "0. Exit Program\n"
                   "Enter your choice according to the number: "))
-    
+
     if x == 1:
         l = eval(input("Enter the length: "))
         w = eval(input("Enter the width: "))
@@ -18,7 +18,7 @@ while True:
         b = eval(input("Enter the base: "))
         h = eval(input("Enter the height: "))
         print(">> : ", 0.5*b*h)
-    elif x == 4: 
+    elif x == 4:
         r = eval(input("Enter the radius: "))
         print(">> : ", 3.14*r*r)
     else:

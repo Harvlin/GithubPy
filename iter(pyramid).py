@@ -8,6 +8,7 @@ class Pyramid:
         self.a += "."
         return x
 
+
 i = Pyramid()
 j = iter(i)
 print(next(j))

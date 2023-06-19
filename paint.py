@@ -24,7 +24,8 @@ class Draw():
 
         # Configure the alignment , font size and color of the text
         text = Text(root)
-        text.tag_configure("tag_name", justify='center', font=('arial', 25), background='#292826', foreground='orange')
+        text.tag_configure("tag_name", justify='center', font=(
+            'arial', 25), background='#292826', foreground='orange')
 
         # Insert a Text
         text.insert("1.0", "Drawing Application in Python")
@@ -34,7 +35,8 @@ class Draw():
         text.pack()
 
         # Pick a color for drawing from color pannel
-        self.pick_color = LabelFrame(self.root, text='Colors', font=('arial', 15), bd=5, relief=RIDGE, bg="white")
+        self.pick_color = LabelFrame(self.root, text='Colors', font=(
+            'arial', 15), bd=5, relief=RIDGE, bg="white")
         self.pick_color.place(x=0, y=40, width=90, height=185)
 
         colors = ['blue', 'red', 'green', 'orange', 'violet', 'black', 'yellow', 'purple', 'pink', 'gold', 'brown',
@@ -49,7 +51,8 @@ class Draw():
                 j = 1
 
         # Erase Button and its properties
-        self.eraser_btn = Button(self.root, text="Eraser", bd=4, bg='white', command=self.eraser, width=9, relief=RIDGE)
+        self.eraser_btn = Button(self.root, text="Eraser", bd=4,
+                                 bg='white', command=self.eraser, width=9, relief=RIDGE)
         self.eraser_btn.place(x=0, y=197)
 
         # Reset Button to clear the entire screen
@@ -72,12 +75,14 @@ class Draw():
                                         relief=RIDGE)
         self.pointer_frame.place(x=0, y=320, height=200, width=70)
 
-        self.pointer_size = Scale(self.pointer_frame, orient=VERTICAL, from_=48, to=0, length=168)
+        self.pointer_size = Scale(
+            self.pointer_frame, orient=VERTICAL, from_=48, to=0, length=168)
         self.pointer_size.set(1)
         self.pointer_size.grid(row=0, column=1, padx=15)
 
         # Defining a background color for the Canvas
-        self.background = Canvas(self.root, bg='white', bd=5, relief=GROOVE, height=470, width=680)
+        self.background = Canvas(
+            self.root, bg='white', bd=5, relief=GROOVE, height=470, width=680)
         self.background.place(x=80, y=40)
 
         # Bind the background Canvas with mouse click
@@ -123,7 +128,8 @@ class Draw():
             y1 = y + self.background.winfo_height()
             # print(y1)
             ImageGrab.grab().crop((x, y, x1, y1)).save(file_ss)
-            messagebox.showinfo('Screenshot Successfully Saved as' + str(file_ss))
+            messagebox.showinfo(
+                'Screenshot Successfully Saved as' + str(file_ss))
 
         except:
             print("Error in saving the screenshot")

@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import sys
+
+
 def plot():
     x = pd.read_csv("data4.csv")
     x.drop_duplicates(inplace=True)
