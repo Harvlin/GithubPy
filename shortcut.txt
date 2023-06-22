@@ -1,0 +1,22 @@
+ctrl + shift + l       =    Select all the same word
+
+
+alt + click            =    place multiple cursor
+
+
+ctrl + k + o           =    open a folder
+
+
+ctrl + shift + n       =    open new windows
+
+
+ctrl + `               =    new terminal
+
+
+ctr + shift + p        =    show command
+
+
+ctrl + ,               =    settings
+
+
+ctrl + shift + f       =    find files   
