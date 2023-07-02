@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
+# init
 window = tk.Tk()
 window.configure(bg="grey")
 window.geometry("400x500")
